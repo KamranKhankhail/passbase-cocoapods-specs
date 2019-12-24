@@ -19,18 +19,18 @@ Pod::Spec.new do |spec|
     spec.swift_version  = '4.2'
     #spec.source       = { :git => 'https://github.com/skorostetskyi/passbase.git', :tag => spec.version.to_s }
     spec.source       = { :http => "https://skorostetskyi.com/Passbase.framework.zip" }
-    spec.requires_arc = true
-    spec.source_files  = 'Passbase/**/*.{swift}'
-    spec.resource_bundles = {
-        'Passbase' => ['Passbase/**/*.{storyboard,png,gif,xcassets,ttf,xib,json,strings,framework}']
-    }
+    #spec.requires_arc = true
+    #spec.source_files  = 'Passbase/**/*.{swift}'
+    #spec.resource_bundles = {
+    #    'Passbase' => ['Passbase/**/*.{storyboard,png,gif,xcassets,ttf,xib,json,strings,framework}']
+    #}
 
-    spec.vendored_frameworks = 'Passbase.framework'
+    #spec.vendored_frameworks = 'Passbase.framework'
 
     #spec.source       = { :http => "https://button.passbase.com/__react-native/ZoomAuthenticationHybrid.framework.zip" }
 
-    #spec.framework    = "Passbase"
-    #spec.vendored_frameworks = "Passbase.framework"
+    spec.framework    = "Passbase"
+    spec.vendored_frameworks = "Passbase.framework"
 
 end
 
