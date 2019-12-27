@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
     spec.homepage       = 'https://www.passbase.com'
     spec.license        = { type: 'custom', text: 'Passbase is Copyright 2019 Passbase, Inc.  It may not be modified.' }
     spec.author         = { 'Mathias J. Klenk' => 'mathias@passbase.com' }
-    spec.platform       = :ios, '10.0'
-    spec.swift_version  = '4.2'
+    spec.platform       = :ios, '11.0'
+    spec.swift_version  = '5'
     spec.source       = { :git => 'https://github.com/skorostetskyi/passbase.git', :tag => spec.version.to_s }
     spec.requires_arc = true
     spec.source_files  = 'Passbase/**/*.{swift}'
