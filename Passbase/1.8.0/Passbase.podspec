@@ -16,13 +16,15 @@ Pod::Spec.new do |spec|
     spec.license        = { type: 'custom', text: 'Passbase is Copyright 2019 Passbase, Inc.  It may not be modified.' }
     spec.author         = { 'Mathias J. Klenk' => 'mathias@passbase.com' }
     spec.platform       = :ios, '11.0'
-    spec.swift_version  = '5'
+    spec.swift_version    = '5.0'
     spec.source       = { :git => 'https://github.com/skorostetskyi/passbase.git', :tag => spec.version.to_s }
     spec.requires_arc = true
     spec.source_files  = 'Passbase/**/*.{swift}'
     spec.resource_bundles = {
         'Passbase' => ['Passbase/**/*.{storyboard,png,gif,xcassets,ttf,xib,json,strings}']
     }
+
+    spec.static_framework = true
 
     spec.dependency 'ZoomAuthenticationHybrid', '~> 7.0.18'
     spec.dependency 'Rollbar'
