@@ -26,7 +26,7 @@ Pod::Spec.new do |spec|
     s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 
     spec.dependency 'ZoomAuthenticationHybrid', '~> 7.0.18'
-    spec.dependency 'Sentry'
+    spec.dependency 'Sentry', :git => 'https://github.com/getsentry/sentry-cocoa.git'
 
     spec.vendored_frameworks = 'Passbase.framework'
 
