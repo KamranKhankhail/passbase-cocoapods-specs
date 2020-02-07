@@ -23,7 +23,6 @@ Pod::Spec.new do |spec|
     spec.resource_bundles = {
         'Passbase' => ['Passbase/**/*.{storyboard,png,gif,xcassets,ttf,xib,json,strings}']
     }
-    spec.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 
     spec.dependency 'ZoomAuthenticationHybrid', '~> 7.0.18'
     spec.dependency 'Sentry'
